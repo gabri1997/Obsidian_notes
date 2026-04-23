@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+    <head>
+<meta charset="utf-8">
+<script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+  	    <meta name="apple-mobile-web-app-capable" content="yes">
+  	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="NovelAcademy">
+        <meta name="msapplication-config" content="none">
+        <meta name="facebook-domain-verification" content="4nxtangcp2so43uqt2zq6m88tpxf8f">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://novelacademy.it/wp-content/themes/novelacademy/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="https://novelacademy.it/wp-content/themes/novelacademy/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://novelacademy.it/wp-content/themes/novelacademy/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://novelacademy.it/wp-content/themes/novelacademy/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://novelacademy.it/wp-content/themes/novelacademy/favicon-16x16.png">
+        <link rel="manifest" href="https://novelacademy.it/wp-content/themes/novelacademy/manifest.json">
+        <meta name="msapplication-TileColor" content="#222222">
+        <meta name="msapplication-TileImage" content="https://novelacademy.it/wp-content/themes/novelacademy/ms-icon-144x144.png">
+        <meta name="theme-color" content="#222222">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://www.googletagmanager.com">
+        <link rel="preconnect" href="https://www.google-analytics.com">
+        <link rel="preconnect" href="https://connect.facebook.net">
+        <!--<link rel="preconnect" href="https://cdnjs.cloudflare.com">-->
+
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" as="style" onload="this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css"></noscript>-->
+
+        <link rel="preload" href="https://novelacademy.it/wp-content/themes/novelacademy/js/uikit.min.js" as="script">
+        <link rel="preload" href="https://novelacademy.it/wp-content/themes/novelacademy/images/logo-novel-academy-bianco@2x.png" as="image">
+        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfAZ9hiA.woff2" as="font">
+        <link rel="preload" href="https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYAZ9hiA.woff2" as="font">
+<!---->
+
+        <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">-->
+
+        <!--<link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">-->
+
+                <link rel="preload" href="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg" as="image">
+        
+        <link rel="stylesheet" href="https://novelacademy.it/wp-content/themes/novelacademy/css/uikit.min.css">
+
+        <style>
+            /*@font-face {   
+            font-family: 'Roboto';   
+            font-display: swap;    
+            src: local(' Roboto '), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');   
+            }
+
+            @font-face {  
+            font-family: 'Roboto';  
+            font-display: swap;   
+            src: local(' Roboto '), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxM.woff) format('woff');  
+            }*/
+
+            @font-face {  
+            font-family: 'Inter';  
+            font-display: swap;   
+            font-weight: 300;
+            src:    local('Inter'), 
+                    url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfAZ9hiA.woff2) format('woff2'), 
+                    url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZs.woff) format('woff'); 
+            ascent-override: 70%;
+            descent-override: 28%;
+            line-gap-override: 2%;
+            }
+
+            @font-face {  
+            font-family: 'Inter';  
+            font-display: swap; 
+            font-weight: 600;  
+            src:    local('Inter Bold'), 
+                    url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYAZ9hiA.woff2) format('woff2'), 
+                    url(https://fonts.gstatic.com/s/inter/v3/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYMZs.woff) format('woff'); 
+            ascent-override: 70%;
+            descent-override: 28%;
+            line-gap-override: 2%;
+            }
+        </style>
+
+        <style>
+        html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;-webkit-text-size-adjust:100%;background:#fff;color:#666}body{margin:0}a{-webkit-text-decoration-skip:objects}a{color:#1e87f0;text-decoration:none}img{vertical-align:middle}img{max-width:100%;height:auto;box-sizing:border-box}p,ul{margin:0 0 20px 0}*+p{margin-top:20px}.uk-h2,h1{margin:0 0 20px 0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-weight:400;color:#333;text-transform:none}*+.uk-h2{margin-top:40px}h1{font-size:2.23125rem;line-height:1.2}.uk-h2{font-size:1.7rem;line-height:1.3}@media (min-width:960px){h1{font-size:2.625rem}.uk-h2{font-size:2rem}}ul{padding-left:30px}main{display:block}:root{--uk-breakpoint-s:640px;--uk-breakpoint-m:960px;--uk-breakpoint-l:1200px;--uk-breakpoint-xl:1600px}.uk-section{box-sizing:border-box;padding-top:40px;padding-bottom:40px}@media (min-width:960px){.uk-section{padding-top:70px;padding-bottom:70px}}.uk-section::after,.uk-section::before{content:"";display:table}.uk-section::after{clear:both}.uk-section>:last-child{margin-bottom:0}.uk-section-default{background:#fff}.uk-container{box-sizing:content-box;max-width:1200px;margin-left:auto;margin-right:auto;padding-left:15px;padding-right:15px}@media (min-width:640px){.uk-container{padding-left:30px;padding-right:30px}}@media (min-width:960px){.uk-container{padding-left:40px;padding-right:40px}}.uk-container::after,.uk-container::before{content:"";display:table}.uk-container::after{clear:both}.uk-container>:last-child{margin-bottom:0}.uk-container-expand{max-width:none}.uk-grid-small>*{padding-left:15px}.uk-navbar{display:flex;position:relative}.uk-navbar-container:not(.uk-navbar-transparent){background:#f8f8f8}.uk-navbar-left,.uk-navbar-right{display:flex;align-items:center}.uk-navbar-right{margin-left:auto}.uk-navbar-nav{display:flex;margin:0;padding:0;list-style:none}.uk-navbar-left,.uk-navbar-right{flex-wrap:wrap}.uk-navbar-item,.uk-navbar-nav>li>a,.uk-navbar-toggle{display:flex;justify-content:center;align-items:center;box-sizing:border-box;min-height:80px;padding:0 15px;font-size:.875rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;text-decoration:none}.uk-navbar-nav>li>a{color:#999;text-transform:uppercase}.uk-navbar-item{color:#666}.uk-navbar-toggle{color:#999}.uk-navbar-container>.uk-container .uk-navbar-left{margin-left:-15px;margin-right:-15px}.uk-navbar-container>.uk-container .uk-navbar-right{margin-right:-15px}:root{--uk-leader-fill-content:.}
+        /*[class*=uk-width]{box-sizing:border-box;width:100%;max-width:100%}*/
+        @media (min-width:960px){.uk-width-1-1\@m{width:100%}}.uk-text-primary{color:#1e87f0!important}.uk-responsive-height{box-sizing:border-box}.uk-responsive-height{max-height:100%;width:auto;max-width:none}.uk-logo{font-size:1.5rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:#666;text-decoration:none}.uk-margin-remove-top{margin-top:0!important}.uk-padding-remove-vertical{padding-top:0!important;padding-bottom:0!important}.uk-padding-remove-horizontal{padding-left:0!important;padding-right:0!important}@media (min-width:960px){.uk-hidden\@m{display:none!important}}@media (max-width:959px){.uk-visible\@m{display:none!important}}
+
+
+            .uk-navbar-container:not(.uk-navbar-transparent) {
+                background: #222222 !important;
+            }
+            .uk-navbar-nav>li>a {
+                color: #ffffff !important;
+                text-transform: none !important;
+            }
+
+            .uk-card-secondary {
+                background: #f8f8f8 !important;
+                color: #000 !important;
+                box-shadow: none !important;
+            }
+
+            .uk-card-secondary.uk-card-body h3 {
+                color: #000 !important;
+            }
+
+            .uk-card-secondary.uk-card-body p {
+                color: #555 !important;
+            }
+
+            .uk-input, .uk-textarea {
+                background: #ffffff !important;
+                color: #333 !important;
+                box-shadow: none !important;
+            }
+
+            input::placeholder, textarea::placeholder {
+                color: #999 !important;
+            }
+
+            #form_contatti {
+                color:#333;
+            }
+
+            #form_contatti a {
+                color:#000 !important;
+            }
+
+            .uk-card-default {
+                box-shadow: none !important;
+            }
+
+            .uk-card-primary {
+                box-shadow: none !important;
+            }
+
+            .uk-card-thirdy {
+                background: rgb(61,162,23);
+                background: linear-gradient(326deg, rgba(61,162,23,1) 0%, rgba(75,195,30,1) 100%);
+            }
+
+            .uk-card-thirdy.uk-card-body h3 {
+                color: #fff;
+            }
+
+            .uk-card-thirdy.uk-card-body p {
+                color: #fff;
+            }
+
+            .uk-card-primary.uk-card-body p {
+                color: #fff;
+            }
+
+            .review {
+                width: 0 !important;
+                height: 0;
+                border-style: solid;
+                border-width: 20px 20px 0 0;
+                border-color: #f8f8f8 transparent transparent transparent;
+                position: absolute;
+                bottom: -20px;
+                left: 80%;
+            }
+
+            .uk-navbar-nav>li>a {
+                font-size: 18px
+            }
+
+            .uk-button-primary {
+                background-color: #0683FF !important;
+                color: #fff !important;
+            }
+
+            .uk-text-primary {
+                color: #0683FF !important;
+            }
+
+            .border-white {
+                border: solid 1px #fff;
+            }
+
+            .uk-button-mappa {
+                background-color: #e5e5e5;
+                color: #0683FF;
+                border: none;
+            }
+
+            #footer .uk-link, #footer a, .phone {
+                color: #000 !important;
+                font-weight: 500;
+            }
+
+            .uk-h1, h1 {
+                font-weight: bold !important;
+                font-size: 3rem !important;
+            }
+
+            .uk-h1-super {
+                font-weight: bold !important;
+                font-size: 3.8rem !important;
+            }
+
+            .testo_descrizione {
+                font-size: 18px;
+                margin-top: 20px;
+            }
+
+            h2, .uk-h2 {
+                font-size: 2rem !important;
+                font-weight: 600 !important;
+                line-height: 1.2 !important;
+            }
+
+            h3, .uk-h3 {
+                font-size: 1.5rem !important;
+                font-weight: 600 !important;
+                line-height: 1.4 !important;
+            }
+
+            .uk-text-lead-2 {
+                font-size: 1.2rem !important;
+                line-height: 1.2 !important;
+                color: #333;
+            }
+
+            @media (max-width: 640px) {
+            .uk-h1, h1 {
+                font-weight: bold !important;
+                font-size: 1.8rem !important;
+            }
+            .uk-h1-super {
+                font-weight: bold !important;
+                font-size: 2.2rem !important;
+            }
+            .uk-h2.dettaglio-corso {
+                font-size: 1rem !important;
+            }
+            h2, .uk-h2 {
+                font-size: 1.3rem !important;
+                font-weight: 600 !important;
+                line-height: 1.2 !important;
+            }
+            .uk-h3, h3 {
+                font-size: 1.2rem !important;
+                line-height: 1.3 !important;
+            }
+            .testo_descrizione {
+                font-size: 16px;
+                margin-top: 14px;
+            }
+            }
+
+            html, p {
+                font-family: 'Inter', sans-serif;
+                font-weight: 300;
+            }
+            .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
+                font-family: 'Inter Bold', sans-serif !important; /*Roboto*/
+                font-weight: 600;
+            }
+
+            .black {
+                color:#000 !important;
+            }
+
+            .grey {
+                color:#474747 !important;
+            }
+
+            .background-contatti {
+                background-image: url(https://novelacademy.it/wp-content/themes/novelacademy/images/visual-novel-academy.jpg);
+            }
+
+            .background-corso-disegno {
+                background-image: url(https://novelacademy.it/wp-content/themes/novelacademy/images/visual-corso-disegno_low.jpg);
+            }
+
+                        
+            .background-corso {
+                background-image: url();
+            }
+
+            @media (min-width: 1400px){
+                .background-corso-disegno {
+                background-image: url(https://novelacademy.it/wp-content/themes/novelacademy/images/visual-corso-disegno.jpg);
+                }
+
+                .background-corso {
+                background-image: url();
+                }
+            }
+
+            .uk-overlay-primary {
+                background: rgba(34,34,34,.6) !important;
+            }
+
+            .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+                margin: 0 6px !important;
+            }
+
+            input[type="submit"]{
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;  
+            }
+
+            .guarda-video { cursor: pointer; }
+
+            .lazyload{/*opacity:0;*/position:relative}
+            .lazyloading{background:url(https://novelacademy.it/wp-content/themes/novelacademy/images/loading.gif) 50% 50% no-repeat;/*opacity:1;transition:opacity .3s*/}
+            .lazyloaded{/*opacity:1*/}
+
+            div.wpcf7 {
+                margin: 0;
+                padding: 0;
+            }
+
+            div.wpcf7 .screen-reader-response {
+                position: absolute;
+                overflow: hidden;
+                clip: rect(1px, 1px, 1px, 1px);
+                height: 1px;
+                width: 1px;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            .wpcf7-form.invalid div.wpcf7-response-output {
+                margin: 2em 0.5em 1em;
+                padding: 0.2em 1em;
+                border: 2px solid #ff0000;
+            }
+
+            div.wpcf7-mail-sent-ok {
+                border: 2px solid #398f14;
+            }
+
+            div.wpcf7-mail-sent-ng,
+            div.wpcf7-aborted {
+                border: 2px solid #ff0000;
+            }
+
+            div.wpcf7-spam-blocked {
+                border: 2px solid #ffa500;
+            }
+
+            div.wpcf7-validation-errors,
+            div.wpcf7-acceptance-missing {
+                border: 2px solid #f7e700;
+            }
+
+            .wpcf7-form-control-wrap {
+                position: relative;
+            }
+
+            span.wpcf7-not-valid-tip {
+                color: #f00;
+                font-size: 1em;
+                font-weight: normal;
+                display: block;
+            }
+
+            .use-floating-validation-tip span.wpcf7-not-valid-tip {
+                position: absolute;
+                top: 20%;
+                left: 20%;
+                z-index: 100;
+                border: 1px solid #ff0000;
+                background: #fff;
+                padding: .2em .8em;
+            }
+
+            span.wpcf7-list-item {
+                display: inline-block;
+                margin: 0 0 0 1em;
+            }
+
+            span.wpcf7-list-item-label::before,
+            span.wpcf7-list-item-label::after {
+                content: " ";
+            }
+
+            .wpcf7-display-none {
+                display: none;
+            }
+
+            div.wpcf7 .ajax-loader {
+                visibility: hidden;
+                display: inline-block;
+                background-image: url(https://novelacademy.it/wp-content/themes/novelacademy/images/loading.gif);
+                width: 16px;
+                height: 16px;
+                border: none;
+                padding: 0;
+                margin: 0 0 0 4px;
+                vertical-align: middle;
+            }
+
+            div.wpcf7 .ajax-loader.is-active {
+                visibility: visible;
+            }
+
+            div.wpcf7 div.ajax-error {
+                display: none;
+            }
+
+            div.wpcf7 .placeheld {
+                color: #888;
+            }
+
+            div.wpcf7 input[type="file"] {
+                cursor: pointer;
+            }
+
+            div.wpcf7 input[type="file"]:disabled {
+                cursor: default;
+            }
+
+            div.wpcf7 .wpcf7-submit:disabled {
+                cursor: not-allowed;
+            }
+
+            em {
+                color: #888;
+            }
+
+            .uk-card-muted {
+                background: #f8f8f8;
+            }
+
+            .uk-button-bonifico {
+                background: linear-gradient(326deg,rgba(61,162,23,1) 0,rgba(75,195,30,1) 100%) !important;
+                color: #fff !important;
+                border: 1px solid #e5e5e5;
+                text-transform: none !important;
+                width: 170px;
+            }
+
+
+
+            .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+            font-size: 0.875rem;
+            padding: 0 10px;
+        }
+
+        .uk-navbar-dropdown-nav>li.uk-active>a {
+            color: #0683FF;
+            font-weight: bold;
+        }
+
+        .uk-nav>li.current_page_item>a {
+            color: #0683FF !important;
+            font-weight: bold;
+        }
+
+        .sub-menu>li.current_page_item>a {
+            color: #0683FF !important;
+            font-weight: bold;
+        }
+        
+
+        .uk-nav-default > li > a {
+            font-weight: bold;
+            color: #333 ; /* !important*/
+        }
+
+        .uk-navbar-nav>li.uk-active>a {
+            color: #0683FF;
+            font-weight: bold;
+        }
+
+        .uk-nav-default > li > li > a {
+            font-weight: normal;
+            color: #666 !important;
+        }
+
+        .uk-nav, .uk-nav ul.sub-menu {
+            /*margin: 0;
+            padding: 0;
+            list-style: none;*/
+            padding-left: 15px;
+        }
+
+        .sub-menu>li>a {
+            line-height: 1.6rem;
+        }
+
+        
+        @media (min-width:960px){
+
+            /*.sottomenu .menu-item-has-children.uk-parent .uk-parent a::after {
+                color: blue;
+                content: ' a2';
+            }*/
+
+            /*.menu-item-has-children.uk-parent:not(:nth-child(1)) a::after {
+                color: red;
+                content: ' b';
+            }*/
+
+            .menu-item-has-children a  { /* livello menu 1 */
+                /*color: green !important;*/
+            }
+
+            .menu-item-has-children a::after   {
+                /*font-family: "Font Awesome 5 Free";
+                font-size: 12px;
+                font-weight: 800;
+                content: "\f078"!important;
+                margin-left: 4px;
+                margin-top: 4px;*/
+                content: url(https://novelacademy.it/wp-content/themes/novelacademy/images/down-chevron.svg);
+                height: 12px;
+                width: 8px;
+                margin-left: 4px;
+                margin-bottom: 8px;
+            }
+
+            .sottomenu .menu-item a { /* livello menu 2 */
+                /*color: blue !important;*/
+            }
+
+            .sottomenu .menu-item:not(.uk-parent) a::after  {
+                content: "" !important;
+                content: none !important;
+            }
+
+            .menu-item-has-children.uk-parent .uk-parent a::after {
+                /*color: red;
+                content: "";
+                content: none;*/
+                position: absolute;
+                right: 20px;
+            }
+
+            .sottomenu .sottomenu .menu-item a { /* livello menu 3 */
+                /*color: orange !important;*/
+            }
+
+            .sottomenu .sottomenu .menu-item a::after {
+                content: "";
+                content: none;
+            }
+
+            .uk-navbar-dropdown .uk-navbar-dropdown-bottom-left {
+                /*bottom: 0;
+                top: 100px !important;*/
+                left: 300px !important;
+                /*right: 0;*/
+                margin-top: -40px;
+            }
+
+            [class*=uk-navbar-dropdown-bottom] {
+                margin-top: 0px;
+                border-top: 3px solid #0683FF;
+            }
+
+            .uk-navbar-dropdown {
+                display: none;
+                position: absolute;
+                z-index: 1020;
+                box-sizing: border-box;
+                padding: 25px;
+                background: #fff;
+                color: #666;
+                box-shadow: 0 5px 12px rgba(0,0,0,.15);
+                /*width: auto;*/
+                width: 300px;
+            }
+
+            .uk-close.uk-padding-large {
+                padding: 70px;
+            }
+
+        }
+
+
+        .video-youtube {
+            width: 100%;
+            height: calc(100vw * 9 / 16);
+        }
+
+
+        @media (min-width:960px){
+            .video-youtube {
+                width: 100%;
+                height: calc(100vh * 9 / 16);
+            }
+
+            .uk-heading-large {
+                font-size: 3rem !important;
+            }
+        }
+
+        .uk-container-xsmall {
+            max-width: 750px;
+        }
+
+        p.category {
+            display: inline-block;
+            padding: 3px 8px;
+            background: #1e87f0;
+            line-height: 1.5;
+            font-size: 12px;
+            color: #fff;
+            vertical-align: middle;
+            white-space: nowrap;
+            border-radius: 2px;
+        }
+
+        .uk-border {
+            border: 1px solid #ddd;
+        }
+
+        .wp-block-embed iframe {
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .wp-block-embed__wrapper {
+            position: relative;
+            padding-top: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width:640px){
+            .uk-container.uk-height-large {
+                height: 250px;
+            }
+        }
+
+        .uk-button {
+            border-radius: 100px !important;
+        }
+
+        .bianco {
+            color: #fff;
+        }
+
+        .banner.uk-background-cover .uk-card-body {
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,0.73) 0%, rgba(0,0,0,0.4962359943977591) 30%, rgba(0,0,0,0) 61%, rgba(0,0,0,0) 100%);
+        }
+
+        .banner, .banner.uk-background-cover .uk-card-body {
+            border-radius: 20px;
+            box-shadow: 0 14px 25px rgba(0,0,0,0.16) !important;
+        }
+
+        .banner.uk-background-cover .uk-card-body {
+            padding: 30px 40px;
+        }
+
+        @media (max-width: 640px) {
+            .uk-h4, h4 {
+                font-size: 0.95rem !important;
+                line-height: 1.2 !important;
+            }
+        }
+
+        .banner {
+            margin-bottom: 80px!important;
+            margin-top: 80px!important;
+        }
+        
+
+        b, strong, .uk-bold {
+            font-weight: 600;
+        }
+
+        .uk-width-large {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .uk-button {
+            border-radius: 8px;
+            border: none !important;
+            /*color: #fff !important;*/
+            font-size: 18px !important;
+            line-height: 18px !important;
+            padding: 18px 40px !important;
+            text-transform: none !important;
+        }
+
+        
+        .has-blu-color {
+            color: #0683FF !important;
+        }
+
+        .has-bianco-color {
+            color: #FFF !important;
+        }
+
+        .has-blu-background-color {
+            background: #0683FF !important;
+        }
+
+        .has-grigio-background-color {
+            background: #f8f8f8 !important;
+        }
+
+        .has-medio-font-size {
+            font-size: 18px;
+        }
+
+        .uk-select {
+            background-color: #fff !important;
+            color: #555 !important;
+        }
+
+        .uk-select:not([multiple]):not([size]) {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding-right: 20px;
+            background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
+            background-repeat: no-repeat;
+            background-position: 100% 50%;
+        }
+
+        .uk-text-lead {
+            line-height: 1.2;
+        }
+
+        /*em {
+            font-family: 'Oooh Baby', cursive;
+        }*/
+
+            
+        </style>
+
+        <!--<script src="https://novelacademy.it/wp-content/themes/novelacademy/js/lazysizes.min.js" async=""></script>-->
+
+        <!-- Google Tag Manager -->
+
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO plugin v24.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Come disegnare un volto a matita partendo da zero - Novel Academy</title>
+<link rel="preload" data-rocket-preload as="image" href="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg" fetchpriority="high">
+	<meta name="description" content="Scopri come disegnare un volto a matita. Partiamo con il disegnare un cerchio che diventer&agrave; la nostra scatola cranica, segui gli altri passaggi della guida.">
+	<link rel="canonical" href="https://novelacademy.it/disegnare-un-volto/">
+	<meta property="og:locale" content="it_IT">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Come disegnare un volto a matita partendo da zero - Novel Academy">
+	<meta property="og:description" content="Scopri come disegnare un volto a matita. Partiamo con il disegnare un cerchio che diventer&agrave; la nostra scatola cranica, segui gli altri passaggi della guida.">
+	<meta property="og:url" content="https://novelacademy.it/disegnare-un-volto/">
+	<meta property="og:site_name" content="Novel Academy">
+	<meta property="article:publisher" content="https://www.facebook.com/novelacademytorino/">
+	<meta property="article:published_time" content="2019-01-11T11:43:05+00:00">
+	<meta property="article:modified_time" content="2021-05-05T15:18:21+00:00">
+	<meta property="og:image" content="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg">
+	<meta property="og:image:width" content="2480">
+	<meta property="og:image:height" content="2480">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="author" content="novelacademy">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Scritto da">
+	<meta name="twitter:data1" content="novelacademy">
+	<meta name="twitter:label2" content="Tempo di lettura stimato">
+	<meta name="twitter:data2" content="7 minuti">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://novelacademy.it/disegnare-un-volto/#article","isPartOf":{"@id":"https://novelacademy.it/disegnare-un-volto/"},"author":{"name":"novelacademy","@id":"https://novelacademy.it/#/schema/person/f8c9934a5ff6ffcc68ccae1b2a52f1d6"},"headline":"Disegnare un volto","datePublished":"2019-01-11T11:43:05+00:00","dateModified":"2021-05-05T15:18:21+00:00","mainEntityOfPage":{"@id":"https://novelacademy.it/disegnare-un-volto/"},"wordCount":989,"publisher":{"@id":"https://novelacademy.it/#organization"},"image":{"@id":"https://novelacademy.it/disegnare-un-volto/#primaryimage"},"thumbnailUrl":"https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg","articleSection":["Disegnare"],"inLanguage":"it-IT"},{"@type":"WebPage","@id":"https://novelacademy.it/disegnare-un-volto/","url":"https://novelacademy.it/disegnare-un-volto/","name":"Come disegnare un volto a matita partendo da zero - Novel Academy","isPartOf":{"@id":"https://novelacademy.it/#website"},"primaryImageOfPage":{"@id":"https://novelacademy.it/disegnare-un-volto/#primaryimage"},"image":{"@id":"https://novelacademy.it/disegnare-un-volto/#primaryimage"},"thumbnailUrl":"https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg","datePublished":"2019-01-11T11:43:05+00:00","dateModified":"2021-05-05T15:18:21+00:00","description":"Scopri come disegnare un volto a matita. Partiamo con il disegnare un cerchio che diventer&#224; la nostra scatola cranica, segui gli altri passaggi della guida.","breadcrumb":{"@id":"https://novelacademy.it/disegnare-un-volto/#breadcrumb"},"inLanguage":"it-IT","potentialAction":[{"@type":"ReadAction","target":["https://novelacademy.it/disegnare-un-volto/"]}]},{"@type":"ImageObject","inLanguage":"it-IT","@id":"https://novelacademy.it/disegnare-un-volto/#primaryimage","url":"https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg","contentUrl":"https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg","width":2480,"height":2480,"caption":"disegnare un volto Novel Academy scuola arte Torino"},{"@type":"BreadcrumbList","@id":"https://novelacademy.it/disegnare-un-volto/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://novelacademy.it/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://novelacademy.it/blog/"},{"@type":"ListItem","position":3,"name":"Disegnare un volto"}]},{"@type":"WebSite","@id":"https://novelacademy.it/#website","url":"https://novelacademy.it/","name":"Novel Academy","description":"L&#039;Accademia di Arte Classica e Digitale","publisher":{"@id":"https://novelacademy.it/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://novelacademy.it/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"it-IT"},{"@type":"Organization","@id":"https://novelacademy.it/#organization","name":"Novel Academy","url":"https://novelacademy.it/","logo":{"@type":"ImageObject","inLanguage":"it-IT","@id":"https://novelacademy.it/#/schema/logo/image/","url":"https://novelacademy.it/wp-content/uploads/2018/08/Logo-Novel-Academy-bianco.jpg","contentUrl":"https://novelacademy.it/wp-content/uploads/2018/08/Logo-Novel-Academy-bianco.jpg","width":600,"height":600,"caption":"Novel Academy"},"image":{"@id":"https://novelacademy.it/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/novelacademytorino/","https://www.instagram.com/novelacademy/"]},{"@type":"Person","@id":"https://novelacademy.it/#/schema/person/f8c9934a5ff6ffcc68ccae1b2a52f1d6","name":"novelacademy","image":{"@type":"ImageObject","inLanguage":"it-IT","@id":"https://novelacademy.it/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/0d3fa8eb043a72c6c76cbc51b34b0269?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/0d3fa8eb043a72c6c76cbc51b34b0269?s=96&d=mm&r=g","caption":"novelacademy"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//cdn.iubenda.com">
+<link rel="stylesheet" id="wp-block-library-css" href="https://novelacademy.it/wp-includes/css/dist/block-library/style.min.css?ver=6.7.5" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--blu: #0683FF;--wp--preset--color--bianco: #FFF;--wp--preset--color--grigio: #f8f8f8;--wp--preset--color--nero: #333;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--piccolo: 12px;--wp--preset--font-size--normale: 16px;--wp--preset--font-size--medio: 18px;--wp--preset--font-size--grande: 36px;--wp--preset--font-size--grandissimo: 50px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="cookie-notice-front-css" href="https://novelacademy.it/wp-content/plugins/cookie-notice/css/front.min.css?ver=2.5.4" type="text/css" media="all">
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" class=" _iub_cs_skip" id="iubenda-head-inline-scripts-0">
+/* <![CDATA[ */
+
+var _iub = _iub || [];
+_iub.csConfiguration = {"lang":"it","siteId":1228260,"cookiePolicyInOtherWindow":true,"cookiePolicyId":10846330, "banner":{ "position":"bottom","textColor":"#000000","backgroundColor":"#eeeeee","acceptButtonDisplay": true }, "callback": { onConsentGiven: function() {               
+dataLayer.push({ 'event': 'iubenda_consent_given' }); }
+        } };
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" charset="UTF-8" async="" class=" _iub_cs_skip" data-rocket-src="//cdn.iubenda.com/cs/iubenda_cs.js?ver=3.11.3" id="iubenda-head-scripts-0-js"></script>
+<script type="text/javascript" src="https://novelacademy.it/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://novelacademy.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://novelacademy.it/wp-json/">
+<link rel="alternate" title="JSON" type="application/json" href="https://novelacademy.it/wp-json/wp/v2/posts/2482">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://novelacademy.it/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.5">
+<link rel="shortlink" href="https://novelacademy.it/?p=2482">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://novelacademy.it/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnovelacademy.it%2Fdisegnare-un-volto%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://novelacademy.it/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnovelacademy.it%2Fdisegnare-un-volto%2F&amp;format=xml">
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to manual -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["disegnare"],"pagePostAuthor":"novelacademy"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script type="rocketlazyloadscript" data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PRJC3H');
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}</style>
+<style id="uagb-style-frontend-2482">.uag-blocks-common-selector{z-index:var(--z-index-desktop) !important}@media (max-width: 976px){.uag-blocks-common-selector{z-index:var(--z-index-tablet) !important}}@media (max-width: 767px){.uag-blocks-common-selector{z-index:var(--z-index-mobile) !important}}
+</style>		<style type="text/css" id="wp-custom-css">
+			.uk-width-1-1\@m.uk-first-column {
+    margin-top: 30px;
+}
+
+.focus, .focus a {
+	background: #f3f3f3;
+	color: #2f2f2f;
+	padding: 38px;
+	border-radius: 6px;
+
+}
+
+.etichetta{
+	text-transform: uppercase;
+	font-size: 0.9rem !important;
+}
+
+.title-home {
+	font-size: 1.2rem !important;
+	color: #222222;
+}
+
+@media (min-width: 640px) {
+	.title-home {
+		font-size: 3rem !important;
+	}
+}
+
+
+
+.title-card {
+	font-size: 1.8rem !important;
+	color: #222222;
+}
+
+.orari {
+	    background-color: #fff !important;
+    color: #333 !important;
+     border-color: #eee !important;
+	    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
+}
+
+
+figcaption {
+    font-size: 0.8rem;
+    padding-top: 2%;
+    font-style: italic;
+}
+
+
+body {
+	color:#404040;
+}
+
+.uk-text-meta {
+    color: #5d5d5d !important;
+}
+
+#ez-toc-container {
+    background-color: #eeeeee;
+    padding: 4%;
+    border-radius: 8px;
+    line-height: 1.8;
+}
+
+.cn-button.bootstrap {
+    color: #fff;
+    background: #303030;
+}
+
+.form-area {
+    padding: 0 20%;
+}
+
+.phone.has-nero-color a {
+	color: #000 !important;
+}
+#contacts .uk-card {
+  border-radius: 30px;
+                }
+#contacts .uk-card-secondary {
+  border-radius: 30px;
+                }
+
+		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>    <meta name="generator" content="WP Rocket 3.17.3.1" data-wpr-features="wpr_delay_js wpr_lazyload_images wpr_lazyload_iframes wpr_oci wpr_image_dimensions wpr_desktop">
+</head>
+    <body class="post-template-default single single-post postid-2482 single-format-standard cookies-not-set">
+
+        <!-- Google Tag Manager (noscript) -->
+        
+        <div class="tm-header-mobile uk-hidden@m">
+            <nav class="uk-navbar uk-navbar-container">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="https://novelacademy.it" title="Home">
+                        <img src="https://novelacademy.it/wp-content/themes/novelacademy/images/logo-novel-academy-bianco@2x.png" width="80" height="39" class="" alt="Logo Novel Academy" loading="eager"></a>
+                </div>
+                <div class="uk-navbar-right">
+                    <a class="uk-navbar-toggle" href="#tm-mobile" title="menu" uk-toggle>
+                        <div uk-navbar-toggle-icon></div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="tm-header uk-visible@m" uk-header>
+            <div uk-sticky media="768" show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+                <div class="uk-navbar-container">
+                    <div class="uk-container"> <!-- uk-container-expand -->
+                        <nav class="uk-navbar" uk-navbar="align:left"> <!-- {&quot;align&quot;:&quot;left&quot;,&quot;dropbar&quot;:true,&quot;dropbar-anchor&quot;:&quot;!.uk-navbar-container&quot;,&quot;dropbar-mode&quot;:&quot;slide&quot;} -->
+                            <div class="uk-navbar-left">
+                                <a href="https://novelacademy.it" class="uk-navbar-item uk-logo" title="Home">
+                                    <img src="https://novelacademy.it/wp-content/themes/novelacademy/images/logo-novel-academy-bianco@2x.png" width="110" height="54" class="" alt="Logo Novel Academy" loading="eager"></a>
+                            </div>
+                            <div class="uk-navbar-right">
+                                    <ul id="menu-main-menu" class="uk-navbar-nav">
+<li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-15"><a title="Home" href="https://novelacademy.it/">Home</a></li>
+<li id="menu-item-7504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7504"><a title="Chi siamo" href="https://novelacademy.it/chi-siamo/">Chi siamo</a></li>
+<li id="menu-item-8405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8405"><a title="Award 2026" target="_blank" href="https://naag.gallery/it/concorso-arte-2026-novel-academy-awards">Award 2026</a></li>
+<li id="menu-item-1795" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1795 uk-parent">
+<a title="Corsi a Torino" href="https://novelacademy.it/corsi-arte-digitale-torino/">Corsi a Torino</a>
+<div class="uk-navbar-dropdown">
+<ul role="menu" class="uk-nav uk-navbar-dropdown-nav sottomenu">
+	<li id="menu-item-7831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7831"><a title="Corso di Disegno a Torino" href="https://novelacademy.it/corso-di-disegno-a-torino/">Corso di Disegno a Torino</a></li>
+	<li id="menu-item-8025" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8025"><a title="Corso di Disegno per Bambini Torino" href="https://novelacademy.it/corso-disegno-bambini-torino/">Corso di Disegno per Bambini Torino</a></li>
+	<li id="menu-item-4891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4891"><a title="Corso di Calligrafia Torino" href="https://novelacademy.it/corso-di-calligrafia-torino/">Corso di Calligrafia Torino</a></li>
+	<li id="menu-item-4895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4895"><a title="Corso di Pittura ad Acquerello a Torino" href="https://novelacademy.it/corso-pittura-acquerello-torino/">Corso di Pittura ad Acquerello a Torino</a></li>
+	<li id="menu-item-4896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4896"><a title="Corso di Pittura a Torino" href="https://novelacademy.it/corso-pittura-torino/">Corso di Pittura a Torino</a></li>
+	<li id="menu-item-7649" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7649"><a title="Workshop con Modella a Torino" href="https://novelacademy.it/workshop-disegno-dal-vero-con-modella-torino/">Workshop con Modella a Torino</a></li>
+
+</ul>
+</div>
+</li>
+<li id="menu-item-4591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4591 uk-parent">
+<a title="Corsi Online" href="https://novelacademy.it/corsi-online/">Corsi Online</a>
+<div class="uk-navbar-dropdown">
+<ul role="menu" class="uk-nav uk-navbar-dropdown-nav sottomenu">
+	<li id="menu-item-4890" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4890"><a title="Corso di Procreate Online" href="https://novelacademy.it/corso-procreate-online/">Corso di Procreate Online</a></li>
+	<li id="menu-item-4888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4888"><a title="Corso di Anatomia Artistica Online" href="https://novelacademy.it/corso-anatomia-artistica-online/">Corso di Anatomia Artistica Online</a></li>
+	<li id="menu-item-4889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4889"><a title="Corso di Photoshop Online" href="https://novelacademy.it/corso-photoshop-online/">Corso di Photoshop Online</a></li>
+	<li id="menu-item-5881" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5881"><a title="Corso di Calligrafia Online" href="https://novelacademy.it/corso-calligrafia-online-corsivo-inglese/">Corso di Calligrafia Online</a></li>
+	<li id="menu-item-5641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5641"><a title="Corso di Character Design Online" href="https://novelacademy.it/corso-character-design-online/">Corso di Character Design Online</a></li>
+	<li id="menu-item-5971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5971"><a title="Corso Disegno Online" href="https://novelacademy.it/corso-disegno-online/">Corso Disegno Online</a></li>
+
+</ul>
+</div>
+</li>
+<li id="menu-item-7302" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7302"><a title="Shop" href="https://shop.novelacademy.it">Shop</a></li>
+<li id="menu-item-4610" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4610 uk-parent">
+<a title="Risorse" href="https://novelacademy.it/risorse/">Risorse</a>
+<div class="uk-navbar-dropdown">
+<ul role="menu" class="uk-nav uk-navbar-dropdown-nav sottomenu">
+	<li id="menu-item-4902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4902"><a title="Pennelli Procreate" href="https://novelacademy.it/category/pennelli-procreate/">Pennelli Procreate</a></li>
+	<li id="menu-item-4901" class="menu-item menu-item-type-post_type_archive menu-item-object-tutorial-photoshop menu-item-4901"><a title="Tutorial Photoshop" href="https://novelacademy.it/tutorial-photoshop/">Tutorial Photoshop</a></li>
+	<li id="menu-item-7069" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7069"><a title="Disegni da colorare" href="https://novelacademy.it/disegni-da-colorare/">Disegni da colorare</a></li>
+
+</ul>
+</div>
+</li>
+<li id="menu-item-4534" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-4534"><a title="Blog" href="https://novelacademy.it/blog/">Blog</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a title="Contatti" href="https://novelacademy.it/contatti-accademia-torino/">Contatti</a></li>
+</ul>                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <style>
+        .uk-button {
+            -webkit-box-shadow: 0px 7px 18px -4px rgba(15, 110, 205, 0.67);
+            -moz-box-shadow: 0px 7px 18px -4px rgba(15,110,205,0.47);
+            box-shadow: 0px 7px 18px -4px rgba(15, 110, 205, 0.6);
+            border: 2px solid #5da7f1;
+        }
+
+        .uk-button.uk-button-link {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border: none;
+        }
+        </style>
+
+        <main id="maincontent" role="main">
+
+            <div class="uk-section-default">
+                <div class="uk-section">
+                    <div class="uk-container uk-container-xsmall">
+
+                        <!--<ul class="uk-breadcrumb">
+                            <li><a href="https://novelacademy.it/news">News</a></li>
+                            <li><span>Disegnare un volto</span></li>
+                        </ul>-->
+
+                        <p id="breadcrumbs"><span><span><a href="https://novelacademy.it/">Home</a></span> / <span><a href="https://novelacademy.it/blog/">Blog</a></span> / <span class="breadcrumb_last" aria-current="page">Disegnare un volto</span></span></p>
+                        
+                        <div class="uk-grid-collapse" uk-grid>
+                            <div class="uk-width-1-2@m">
+                                <img fetchpriority="high" class="" src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg" width="600" height="600" alt="Disegnare un volto" loading="eager">
+                            </div>
+                            <div class="uk-width-1-2@m">
+                                <div class="uk-section-secondary uk-light uk-padding uk-height-1-1">
+                                    <p class="uk-text-uppercase uk-text-small uk-margin-remove-bottom category"><a href="https://novelacademy.it/category/disegnare/" rel="category tag">Disegnare</a></p>
+                                    <h1 class="uk-heading-large uk-margin-medium-top uk-margin-remove-bottom">Disegnare un volto</h1>
+                                </div>       
+                            </div>
+                        </div>
+
+                        <!--
+                        <h1 class="">Disegnare un volto</h1>
+
+                        <h6 class="uk-text-uppercase uk-text-small uk-margin-small-top uk-margin-small-bottom"><a href="https://novelacademy.it/category/disegnare/" rel="category tag">Disegnare</a></h6>
+
+                        <div class="uk-cover-container uk-height-medium">
+                            <img class="lazyload" data-src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6.jpg" alt="Disegnare un volto" uk-cover>
+                        </div>
+                        -->
+
+                        
+                        <p class="">
+</p>
+<p>In questo articolo vi mostriamo come costruire il volto umano partendo da una semplice struttura geometrica, cominciando a studiare i passaggi fondamentali per imparare a <a href="https://novelacademy.it/disegnare-il-corpo-umano/">disegnare il corpo umano</a>. </p>
+
+
+
+<h2 class="wp-block-heading">Come disegnare un volto a matita partendo da zero</h2>
+
+
+
+<h4 class="wp-block-heading">Passaggio 1</h4>
+
+
+
+<p>Partiamo con il disegnare un cerchio che diventer&agrave; la nostra scatola cranica. Dividiamo il cerchio in due segnando a lato le linee di costruzione di queste due nuove misure.</p>
+
+
+
+<figure class="wp-block-image"><img fetchpriority="high" decoding="async" width="2480" height="2480" src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-1.jpg" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2483" srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-1.jpg 2480w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-1-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-1-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-1-768x768.jpg 768w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-1-1024x1024.jpg 1024w" sizes="(max-width: 2480px) 100vw, 2480px"></figure>
+
+
+
+<h4 class="wp-block-heading">Passaggio 2</h4>
+
+
+
+<p>Dividiamo ulteriormente questo primo cerchio in sei parti e tracciamo tre posizioni, esattamente come nell&rsquo;esempio qui sotto. Segniamo una riferimento tra la riga 1-2, 3-4 e 5-6.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Tieni presente che non ci servir&agrave; un cerchio perfetto per definire la forma della testa, va considerato come una semplice traccia che successivamente andremo a modificare.</p></blockquote>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="2480" height="2480" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202480%202480'%3E%3C/svg%3E" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2484" data-lazy-srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2.jpg 2480w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2-768x768.jpg 768w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2-1024x1024.jpg 1024w" data-lazy-sizes="(max-width: 2480px) 100vw, 2480px" data-lazy-src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2.jpg"><noscript><img decoding="async" width="2480" height="2480" src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2.jpg" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2484" srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2.jpg 2480w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2-768x768.jpg 768w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-2-1024x1024.jpg 1024w" sizes="(max-width: 2480px) 100vw, 2480px"></noscript></figure>
+
+
+
+<h4 class="wp-block-heading">Passaggio 3</h4>
+
+
+
+<p>Aggiungiamo la mandibola tracciandola forma del mento. Per farlo aggiungiamo un altro terzo usando come riferimento i primi due blocchi generati dal punto 2-3 e 4-5, creando cosi il blocco 6-7.</p>
+
+
+
+<p>Il punto tra 1-2 che abbiamo segnato in precedenza definisce l&rsquo;inizio della smussatura laterale del cranio visto frontalmente. Nella congiunzione tra il segno ed il cerchio avremo l&rsquo;inizio di questa curvatura. Possiamo tracciarla iniziando a vedere la prima forma familiare di un cranio.</p>
+
+
+
+<p>Il punto 3-4 definisce la posizione delle sopracciglia e dell&rsquo;altezza massima dell&rsquo;orecchio che vedremo nel passaggio successivo, mentre il 5-6 sono la fine del naso. Questo nuovo punto 7 definisce quindi il mento.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1000" height="1000" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%201000'%3E%3C/svg%3E" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2485" data-lazy-srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3.jpg 1000w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3-768x768.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3.jpg"><noscript><img decoding="async" width="1000" height="1000" src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3.jpg" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2485" srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3.jpg 1000w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-3-768x768.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px"></noscript></figure>
+
+
+
+<div data-bg="https://novelacademy.it/wp-content/uploads/2020/10/banner-corso-anatomia-artistica-novel-academy.jpg" class="banner uk-card uk-card-default uk-background-cover uk-border-rounded uk-margin-medium-bottom rocket-lazyload" style=" "><div class="uk-card uk-card-body">
+<div class="uk-height-small"></div>
+<p class="uk-h3 bianco uk-margin-large-top uk-text-center uk-margin-remove-bottom">Vuoi imparare i segreti dell&rsquo;anatomia umana?</p>
+<div class="uk-text-center uk-h4 uk-text-center bianco uk-margin-small-top">
+<p>Corso di Anatomia Artistica Online</p>
+</div>
+<div class="uk-text-center">
+<a href="https://novelacademy.it/corso-anatomia-artistica-online/" class="uk-button uk-button-large uk-button-primary bianco">Scopri il corso</a>
+				</div>
+</div></div>
+
+
+
+<h4 class="wp-block-heading">Passaggio 4</h4>
+
+
+
+<p>Possiamo <a href="https://novelacademy.it/corso-disegno-online/">cominciare a disegnare</a> idealmente le sopracciglia nel punto 3-4. Gli occhi sono posizionati esattamente nella riga 4, per una corretta proporzione mantieni quel riferimento. Come detto in precedenza, le narici segnano il naso e poggiano sulla riga 5-6 e la bocca &egrave; in linea con la riga 6-7. Il punto che abbiamo segnato per primo, l&rsquo;1-2 &egrave; il riferimento per l&rsquo;attaccatura dei capelli.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Uno tra i tanti segreti fondamentali dell&rsquo;anatomia umana &egrave; quello della proporzione tra la bocca e le pupille. La bocca, nella sua larghezza, termina a met&agrave; delle pupille. Ricorda bene questo dettaglio sempre utilissimo!</p></blockquote>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1024" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2486" data-lazy-srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-1024x1024.jpg 1024w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-768x768.jpg 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-1024x1024.jpg"><noscript><img decoding="async" width="1024" height="1024" src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-1024x1024.jpg" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2486" srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-1024x1024.jpg 1024w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-4-768x768.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></noscript></figure>
+
+
+
+<h4 class="wp-block-heading">Passaggio 5</h4>
+
+
+
+<p>Una volta disegnate le pupille, le labbra e le orecchie il nostro volto comincia a prendere forma. Considera che, essendo partiti da una forma geometrica standard, il nostro volto deve essere riadattato secondo le necessit&agrave; visive. Nell&rsquo;immagine qui sotto si pu&ograve; notare come il cranio sia molto largo, &egrave; necessario assottigliarlo per rendere pi&ugrave; realistico il nostro volto.</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Molti disegnatori consigliano di dividere orizzontalmente il cranio in 5 parti e nella seconda e quarta parte inserire gli occhi. Utilizzando quindi 1 occhio come unita di misura. Questa tecnica aiuta molto la costruzione &ldquo;meccanica&rdquo; per disegnare un volto ma allo stesso tempo allarga il cranio in modo troppo evidente.</p></blockquote>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>Le orecchie seguono sempre una regola precisa: la loro altezza massima coincide con la palpebra superiore e terminano sempre all&rsquo;altezza delle narici.</p></blockquote>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1024" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2487" data-lazy-srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-1024x1024.jpg 1024w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-768x768.jpg 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-1024x1024.jpg"><noscript><img decoding="async" width="1024" height="1024" src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-1024x1024.jpg" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2487" srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-1024x1024.jpg 1024w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-5-768x768.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></noscript></figure>
+
+
+
+<h4 class="wp-block-heading">Passaggio 6</h4>
+
+
+
+<p>Sicuramente il passaggio pi&ugrave; divertente, ora si pu&ograve; disegnare il nostro viso dandogli l&rsquo;aspetto che si preferisce. In questo caso viene aggiunto il collo, alzata leggermente la parte superiore del cranio per dare maggiore armonia all&rsquo;insieme e piccoli accenni di ombre, zigomi e dettagli vari.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" width="1024" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%201024'%3E%3C/svg%3E" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2488" data-lazy-srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-1024x1024.jpg 1024w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-768x768.jpg 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-1024x1024.jpg"><noscript><img decoding="async" width="1024" height="1024" src="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-1024x1024.jpg" alt="disegnare un volto Novel Academy scuola arte Torino" class="wp-image-2488" srcset="https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-1024x1024.jpg 1024w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-150x150.jpg 150w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-300x300.jpg 300w, https://novelacademy.it/wp-content/uploads/2019/01/disegnare-un-volto-novel-academy-torino-6-768x768.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></noscript></figure>
+
+
+
+<div style="height:37px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading">Come disegnare un volto di profilo</h2>
+
+
+
+<figure class="wp-block-image size-large is-style-default"><img decoding="async" width="1000" height="680" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20680'%3E%3C/svg%3E" alt="come disegnare una volto di profilo" class="wp-image-5440" data-lazy-srcset="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-01-novel-academy.jpg 1000w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-01-novel-academy-300x204.jpg 300w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-01-novel-academy-768x522.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-01-novel-academy.jpg"><noscript><img decoding="async" width="1000" height="680" src="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-01-novel-academy.jpg" alt="come disegnare una volto di profilo" class="wp-image-5440" srcset="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-01-novel-academy.jpg 1000w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-01-novel-academy-300x204.jpg 300w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-01-novel-academy-768x522.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px"></noscript>
+<figcaption>Disegnare un volto di profilo</figcaption></figure>
+
+
+
+<p>Entriamo sempre pi&ugrave; nello specifico. Nella figura in alto ho separato i passaggi per poter disegnare una persona di profilo in modo anatomicamente corretto. <strong>Passaggio A</strong>, disegna un semplice cerchio che andremo a dividere a met&agrave; in verticale e orizzontale come nel <strong>passaggio B</strong>. Dopo avere eseguito questo punto passiamo al <strong>C</strong>, aggiungiamo una met&agrave; del cerchio al fondo, ottenendo cos&igrave; tre parti uguali, due nel cerchio e la terza fuori da quest&rsquo;ultimo. In questo modo avremo l&rsquo;altezza esatta tra cranio e mandibola, ma lo vedremo tra poco. Nel <strong>passaggio D</strong> creiamo una nuova forma dividendo tre volte il lato sinistro del cerchio per ottenere una fascia verticale come <strong>nuova unit&agrave; di misura</strong>, e aggiungiamo questo nuovo elemento pi&ugrave; a sinistra, avendo ora quattro colonne.</p>
+
+
+
+<p>Questa fase permette di <strong>distanziare la fronte del cranio dalla mascella e mandibola</strong> che nella testa umana sono posizionati pi&ugrave; avanti e non esattamente in linea verticale tra loro. Piccoli trucchi che rendono la nostra costruzione davvero perfetta.</p>
+
+
+
+<figure class="wp-block-image size-large is-style-default"><img decoding="async" width="1000" height="680" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20680'%3E%3C/svg%3E" alt="come disegnare una volto di profilo" class="wp-image-5441" data-lazy-srcset="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-02-novel-academy.jpg 1000w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-02-novel-academy-300x204.jpg 300w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-02-novel-academy-768x522.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-02-novel-academy.jpg"><noscript><img decoding="async" width="1000" height="680" src="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-02-novel-academy.jpg" alt="come disegnare una volto di profilo" class="wp-image-5441" srcset="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-02-novel-academy.jpg 1000w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-02-novel-academy-300x204.jpg 300w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-02-novel-academy-768x522.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px"></noscript>
+<figcaption>Come disegnare un volto di profilo con metodo</figcaption></figure>
+
+
+
+<p>Ora che abbiamo la struttura essenziale di partenza come nel <strong>passaggio E</strong> possiamo disegnare il volto di profilo seguendo la gabbia creata. Nel <strong>passaggio F</strong> segnamo la prima linea della fronte e posizioniamo l&rsquo;orbita dell&rsquo;occhio non esattamente al centro della fascia centrale orizzontale ma poco pi&ugrave; vicina al fondo del cerchio di costruzione, segnato come <strong>punto 2</strong>, e tracciamo con una curva la mandibola tra la met&agrave; del cerchio alla met&agrave; dell&rsquo;ultima colonna aggiunta a sinistra, il riferimento &egrave; il <strong>punto 3</strong>. &Egrave; importante non far terminare il mento alla fine del bordo dell&rsquo;ultima colonna a sinistra ma alla sua met&agrave;, per evitare una sporgenza eccessiva del mento stesso nel risultato complessivo.</p>
+
+
+
+<figure class="wp-block-image size-large is-style-default"><img decoding="async" width="1000" height="680" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201000%20680'%3E%3C/svg%3E" alt="come disegnare una volto di profilo" class="wp-image-5442" data-lazy-srcset="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-03-novel-academy.jpg 1000w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-03-novel-academy-300x204.jpg 300w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-03-novel-academy-768x522.jpg 768w" data-lazy-sizes="(max-width: 1000px) 100vw, 1000px" data-lazy-src="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-03-novel-academy.jpg"><noscript><img decoding="async" width="1000" height="680" src="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-03-novel-academy.jpg" alt="come disegnare una volto di profilo" class="wp-image-5442" srcset="https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-03-novel-academy.jpg 1000w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-03-novel-academy-300x204.jpg 300w, https://novelacademy.it/wp-content/uploads/2020/08/come-disegnare-una-persona-di-profilo-03-novel-academy-768x522.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px"></noscript>
+<figcaption>Disegnare un volto di profilo</figcaption></figure>
+
+
+
+<p>Possiamo ora vestire le base scheletrica con tutti gli elementi che compongono il viso di profilo di una persona, in questo caso rappresentiamo un uomo. </p>
+
+
+
+<p><strong>L&rsquo;occhio</strong>, visto lateralmente, crea un triangolo con la punta rivolta verso l&rsquo;orecchio ed il <strong>naso</strong> &egrave; dritto e lineare per dare un aspetto squadrato tipicamente maschile. Le <strong>labbra</strong> si appoggiano al termine dell&rsquo;esterno dei denti (gli incisivi) ed il taglio della <strong>bocca</strong> finisce esattamente, in linea verticale, all&rsquo;inizio della pupilla. La base dell&rsquo;<strong>orecchio</strong>, quindi la sua attaccatura al cranio, comincia all&rsquo;altezza dell&rsquo;occhio e termina sulla linea della bocca. </p>
+
+
+
+<p>&Egrave; fondamentale ricordare che questi elementi <strong>sono rapportati tra loro</strong> allo stesso modo in tutti gli esseri umani, con ovviamente un&rsquo;armonia nelle proporzioni a seconda della caratteristiche fisiche di ogni persona.</p>
+
+
+
+<p>Consiglio vivamente di ripetere questo esercizio pi&ugrave; volte per impararlo &ldquo;<strong>letteralmente a memoria</strong>&rdquo; e poterlo applicare in modo quasi meccanico. Grazie a questo processo &egrave; possibile migliorare passo passo e disegnare in modo automatico perfezionando sempre pi&ugrave; ogni gesto e dettaglio, sino ad arrivare a <strong>disegnare un volto umano partendo completamente da zero</strong>.</p>
+
+
+
+<div data-bg="https://novelacademy.it/wp-content/uploads/2021/01/banner-corso-disegno-online-novel-academy.jpg" class="banner uk-card uk-card-default uk-background-cover uk-border-rounded uk-margin-medium-bottom rocket-lazyload" style=" "><div class="uk-card uk-card-body">
+<div class="uk-height-small"></div>
+<p class="uk-h3 bianco uk-margin-large-top uk-text-center uk-margin-remove-bottom">Impara a disegnare, ora.</p>
+<div class="uk-text-center uk-h4 uk-text-center bianco uk-margin-small-top">
+<p>Corso di Disegno Online</p>
+</div>
+<div class="uk-text-center">
+<a href="https://novelacademy.it/corso-disegno-online/" class="uk-button uk-button-large uk-button-primary bianco">Scopri il corso</a>
+				</div>
+</div></div>
+
+
+                        
+<div id="stefano-marvulli" class="author">
+    <div class="uk-card uk-card-default uk-card-body uk-margin-medium-top">
+        <div class="uk-grid-medium uk-flex-middle" uk-grid>
+            <div class="uk-width-1-5@m uk-text-center ">
+                                    <img class="uk-border-circle" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3C/svg%3E" width="100" height="100" alt="Stefano Marvulli" data-lazy-src="https://novelacademy.it/wp-content/uploads/2021/10/stefano-marvulli.jpg"><noscript><img class="uk-border-circle" src="https://novelacademy.it/wp-content/uploads/2021/10/stefano-marvulli.jpg" width="100" height="100" alt="Stefano Marvulli" loading="lazy"></noscript>
+                            </div>
+            <div class="uk-width-4-5@m">
+                <h4 class="uk-margin-remove uk-h3">Stefano Marvulli</h4>
+                <h5 class="uk-margin-remove">Artista</h5>
+                <p>Stefano Marvulli &egrave; nato nel 1982 a Rivoli, Torino. Artista figurativo italiano, specializzato nel Disegno, Digital Painting, Grafica e Tatuaggio. Fondatore e direttore artistico di Novel Academy. Docente in Novel Academy di Disegno, Acquerello, Procreate, Anatomia e Grafica Digitale.</p>
+                <div class="uk-child-width-auto uk-grid-small uk-flex-center uk-flex-left@m uk-grid">
+                                                                                                                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<style type="text/css">
+    #author- {
+        background: ;
+        color: ;
+    }
+</style>-->
+
+
+
+                         
+
+                        <div class="">
+                                                </div>
+
+                        <!--<hr class="uk-margin-medium-top">-->
+
+                        <!--<div uk-grid>
+                            <div class="uk-width-1-2@m">
+                                                                <button class="uk-button uk-button-link"><span uk-icon="icon: chevron-left"></span> <a href="https://novelacademy.it/come-dipingere-nuvole-in-digitale-procreate/" rel="prev">Articolo precedente</a></button>   
+                                                            </div>
+                            <div class="uk-width-1-2@m uk-text-right">
+                                                                <button class="uk-button uk-button-link"><a href="https://novelacademy.it/come-dipingere-un-occhio-procreate/" rel="next">Articolo successivo</a> <span uk-icon="icon: chevron-right"></span></button>  
+                                                            </div>
+                        </div>-->
+
+                        <hr>
+
+                        
+                        <!--<h2 class="">Articoli recenti</h2>
+
+                        
+                        <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-1-3@m"><a href="https://novelacademy.it/open-gallery-bottega-arte-italia-rivoli-novel-academy-naag/" title="Open Gallery: Quando la Galleria Diventa Bottega d'Arte"><img width="2160" height="2160" class="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202160%202160'%3E%3C/svg%3E"alt="Open Gallery: Quando la Galleria Diventa Bottega d'Arte" data-lazy-src="https://novelacademy.it/wp-content/uploads/2026/03/blog.jpg" ><noscript><img width="2160" height="2160" class="" src="https://novelacademy.it/wp-content/uploads/2026/03/blog.jpg"alt="Open Gallery: Quando la Galleria Diventa Bottega d'Arte" loading="lazy" ></noscript></a><h4 class="uk-margin-small-top"><a class="black" href="https://novelacademy.it/open-gallery-bottega-arte-italia-rivoli-novel-academy-naag/">Open Gallery: Quando la Galleria Diventa Bottega d'Arte</a></h4> </div> <div class="uk-width-1-3@m"><a href="https://novelacademy.it/novel-academy-award-2026/" title="Novel Academy Award 2026"><img width="1080" height="1080" class="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201080%201080'%3E%3C/svg%3E"alt="Novel Academy Award 2026" data-lazy-src="https://novelacademy.it/wp-content/uploads/2026/01/novel-academy-award-2026-visual-blog-quad.jpg" ><noscript><img width="1080" height="1080" class="" src="https://novelacademy.it/wp-content/uploads/2026/01/novel-academy-award-2026-visual-blog-quad.jpg"alt="Novel Academy Award 2026" loading="lazy" ></noscript></a><h4 class="uk-margin-small-top"><a class="black" href="https://novelacademy.it/novel-academy-award-2026/">Novel Academy Award 2026</a></h4> </div> <div class="uk-width-1-3@m"><a href="https://novelacademy.it/galleria-arte-rivoli-naag-novel-academy-contemporanea/" title="Inaugurazione NAAG"><img width="2048" height="2048" class="" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202048%202048'%3E%3C/svg%3E"alt="Inaugurazione NAAG" data-lazy-src="https://novelacademy.it/wp-content/uploads/2025/10/post-01-novel-academy-art-gallery.jpg" ><noscript><img width="2048" height="2048" class="" src="https://novelacademy.it/wp-content/uploads/2025/10/post-01-novel-academy-art-gallery.jpg"alt="Inaugurazione NAAG" loading="lazy" ></noscript></a><h4 class="uk-margin-small-top"><a class="black" href="https://novelacademy.it/galleria-arte-rivoli-naag-novel-academy-contemporanea/">Inaugurazione NAAG</a></h4> </div>                         </div>-->
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    <!-- FOOTER -->
+            <footer id="footer" class="uk-section-muted uk-section uk-section-small" uk-scrollspy='{"target":"[uk-scrollspy-class]","cls":"uk-animation-slide-left-small","delay":false}'>
+            <div class="uk-container">
+  
+                <div class="uk-width-1-1">
+                    <div class="uk-margin-remove-vertical uk-text-center" uk-scrollspy-class>
+                        <a href="https://novelacademy.it" class="el-link" title="Home"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2074'%3E%3C/svg%3E" width="150" height="74" class="el-image" alt="Logo" data-lazy-src="https://novelacademy.it/wp-content/themes/novelacademy/images/logo-novel-academy-nero@2x.png"><noscript><img src="https://novelacademy.it/wp-content/themes/novelacademy/images/logo-novel-academy-nero@2x.png" width="150" height="74" class="el-image" alt="Logo" loading="lazy"></noscript></a>
+                    </div>
+                </div>
+
+
+                <div class="uk-child-width-expand@s uk-margin-large-top" uk-grid>
+                    
+                    <!-- <div>
+                        <ul class="uk-list">
+                            <li class="titolo-footer">Mobile</li>
+                            <li><a href="tel:3381195095" title="Chiamami al 3381195095">338 1195095</a></li>
+                        </ul>
+                    </div> -->
+
+                    <div>
+                        <ul class="uk-list">
+                            <li class="titolo-footer">YouTube</li>
+                            <li><a href="https://www.youtube.com/channel/UCYFJAsfe5kiClsRk2FSEB1g" title="YouTube">@NovelAcademy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <ul class="uk-list">
+                            <li class="titolo-footer">TikTok</li>
+                            <li class="menu-item"><a href="https://www.tiktok.com/@novelacademy" target="_blank" rel="noopener nofollow" title="Vai alla pagina di Novel Academy su TikTok">@novelacademy</a></li>
+        
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <ul class="uk-list">
+                            <li class="titolo-footer">Instagram</li>
+                            <li class="menu-item"><a href="https://www.instagram.com/novelacademy/" target="_blank" rel="noopener nofollow" title="Vai alla pagina di Novel Academy su Facebook">@novelacademy</a></li>
+        
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-list">
+                            <li class="titolo-footer">Facebook</li>
+                            <li><a href="https://www.facebook.com/novelacademytorino/" target="_blank" rel="noopener nofollow" title="Vai alla pagina di Novel Academy su Instagram">@novelacademytorino</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1 uk-margin-large-top">
+                    <div class="uk-text-center" uk-scrollspy-class="uk-animation-slide-bottom-small">
+                        &copy;2025 Novel Academy - P.iva 10539860014 - <a href="https://www.iubenda.com/privacy-policy/10846330" target="_blank" rel="noopener nofollow" title="Privacy Policy">Privacy Policy</a> - <a href="https://www.iubenda.com/privacy-policy/10846330/cookie-policy" target="_blank" rel="noopener nofollow" title="Cookies Policy">Cookies Policy</a> - <a href="https://novelacademy.it/credits/" title="Credits">Credits</a> - <a href="https://novelacademy.it/faq/" title="Credits" target="_blank">FAQ</a> - <a href="https://novelacademy.it/lavora-con-noi/" title="Credits" target="_blank">Lavora con noi</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="tm-mobile" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-flex" uk-height-viewport>
+                <button class="uk-modal-close-full" type="button" uk-close></button>
+                <div class="uk-width-1-1">
+                    <div class="uk-child-width-1-1" uk-grid>
+                        <div>
+                            <div class="uk-panel">
+                                <ul class="uk-nav uk-nav-default tm-nav">                                  
+                                    <li class="uk-nav-header">I Corsi a Torino</li>
+                                    <li class="uk-nav-divider">
+                                </li>
+</ul>
+
+                                    <ul id="menu-menu_corsi" class="uk-nav uk-nav-default tm-nav">
+<li id="menu-item-4589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4589"><a href="https://novelacademy.it/corsi-arte-digitale-torino/">Tutti i corsi a Torino</a></li>
+<li id="menu-item-7832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7832"><a href="https://novelacademy.it/corso-di-disegno-a-torino/">Corso di Disegno a Torino</a></li>
+<li id="menu-item-8024" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8024"><a href="https://novelacademy.it/corso-disegno-bambini-torino/">Corso di Disegno per Bambini Torino</a></li>
+<li id="menu-item-2289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2289"><a href="https://novelacademy.it/corso-di-calligrafia-torino/">Corso di Calligrafia Torino</a></li>
+<li id="menu-item-4109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="https://novelacademy.it/corso-pittura-acquerello-torino/">Corso di Pittura ad Acquerello a Torino</a></li>
+<li id="menu-item-4313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4313"><a href="https://novelacademy.it/corso-pittura-torino/" title="Corso di Pittura Torino">Corso di Pittura a Torino</a></li>
+<li id="menu-item-7650" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7650"><a href="https://novelacademy.it/workshop-disegno-dal-vero-con-modella-torino/">Workshop con Modella a Torino</a></li>
+</ul>
+                                <ul class="uk-nav uk-nav-default tm-nav">                                  
+                                    <li class="uk-nav-header uk-margin-medium-top">I Corsi Online</li>
+                                    <li class="uk-nav-divider">
+                                </li>
+</ul>
+
+                                    <ul id="menu-menu_corsi_online" class="uk-nav uk-nav-default tm-nav">
+<li id="menu-item-4590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4590"><a href="https://novelacademy.it/corsi-online/">Tutti i corsi online</a></li>
+<li id="menu-item-4311" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4311"><a href="https://novelacademy.it/corso-procreate-online/" title="Corso Procreate Online">Corso di Procreate Online</a></li>
+<li id="menu-item-4588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4588"><a href="https://novelacademy.it/corso-photoshop-online/" title="Corso Photoshop Online">Corso di Photoshop Online</a></li>
+<li id="menu-item-4746" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4746"><a href="https://novelacademy.it/corso-anatomia-artistica-online/" title="Corso Anatomia Online">Corso di Anatomia Artistica Online</a></li>
+<li id="menu-item-5646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5646"><a href="https://novelacademy.it/corso-character-design-online/">Corso di Character Design Online</a></li>
+<li id="menu-item-5882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5882"><a href="https://novelacademy.it/corso-calligrafia-online-corsivo-inglese/">Corso di Calligrafia Online</a></li>
+<li id="menu-item-5972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5972"><a href="https://novelacademy.it/corso-disegno-online/">Corso Disegno Online</a></li>
+</ul>
+                                <!--<ul class="uk-nav uk-nav-default tm-nav">                                  
+                                    <li class="uk-nav-header uk-margin-medium-top">Lezioni one-to-one</li>
+                                    <li class="uk-nav-divider"></li>
+                                </ul>-->
+
+                                    
+                                <ul class="uk-nav uk-nav-default tm-nav">       
+                                    <li class="uk-nav-header uk-margin-medium-top">Novel Academy</li>
+                                    <li class="uk-nav-divider">
+                                </li>
+</ul>
+
+                                    <ul id="menu-menu_mobile" class="uk-nav uk-nav-default tm-nav">
+<li id="menu-item-2293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2293"><a href="https://novelacademy.it/">Home</a></li>
+<li id="menu-item-7505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7505"><a href="https://novelacademy.it/chi-siamo/">Chi siamo</a></li>
+<li id="menu-item-8406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8406"><a target="_blank" href="https://naag.gallery/it/concorso-arte-2026-novel-academy-awards">Award 2026</a></li>
+<li id="menu-item-4609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4609"><a href="https://novelacademy.it/risorse/">Risorse</a></li>
+<li id="menu-item-4533" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-4533"><a href="https://novelacademy.it/blog/">Blog</a></li>
+<li id="menu-item-2294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2294"><a href="https://novelacademy.it/contatti-accademia-torino/">Contatti</a></li>
+</ul>
+                                <ul class="uk-nav uk-nav-default tm-nav">
+                                    <li class="uk-nav-divider uk-margin-medium-top">
+                                    </li>
+<li class="uk-margin-small-top"><p>L&rsquo;Accademia artistica a Torino nella quale potrai imparare da zero o migliorare il tuo talento. La prima lezione &egrave; gratuita!</p></li>
+                                </ul>
+                                <p class="uk-text-center"><a href="" class="uk-button uk-button-primary" title="Contattaci">Contattaci</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" id="cookie-notice-front-js-before">
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/novelacademy.it\/wp-admin\/admin-ajax.php","nonce":"3e3fa60da3","hideEffect":"fade","position":"bottom","onScroll":false,"onScrollOffset":100,"onClick":false,"cookieName":"cookie_notice_accepted","cookieTime":7862400,"cookieTimeRejected":2592000,"globalCookie":false,"redirection":false,"cache":true,"revokeCookies":false,"revokeCookiesOpt":"automatic"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://novelacademy.it/wp-content/plugins/cookie-notice/js/front.min.js?ver=2.5.4" id="cookie-notice-front-js"></script>
+<script type="text/javascript" id="iubenda-forms-js-extra">
+/* <![CDATA[ */
+var iubFormParams = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://novelacademy.it/wp-content/plugins/iubenda-cookie-law-solution/assets/js/frontend.js?ver=3.11.3" id="iubenda-forms-js"></script>
+<script type="text/javascript" src="https://novelacademy.it/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-contact-form-7-tracker.js?ver=1.20.3" id="gtm4wp-contact-form-7-tracker-js"></script>
+<script type="text/javascript" src="https://novelacademy.it/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js?ver=1.20.3" id="gtm4wp-form-move-tracker-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="//cdn.iubenda.com/cons/iubenda_cons.js?ver=3.11.3" id="iubenda-cons-cdn-js"></script>
+<script type="text/javascript" id="iubenda-cons-js-extra">
+/* <![CDATA[ */
+var iubConsParams = {"api_key":"kaiVAPJ1oIyYEohfeCjNpBncTaZtIZIi","log_level":"error","logger":"console","send_from_local_storage_at_load":"true"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://novelacademy.it/wp-content/plugins/iubenda-cookie-law-solution/assets/js/cons.js?ver=3.11.3" id="iubenda-cons-js"></script>
+
+		<!-- Cookie Notice plugin v2.5.4 by Hu-manity.co https://hu-manity.co/ -->
+		<div id="cookie-notice" role="dialog" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(50,50,58,1);">
+<div class="cookie-notice-container" style="color: #fff">
+<span id="cn-notice-text" class="cn-text-container">Utilizziamo i cookie per essere sicuri che tu possa avere la migliore esperienza sul nostro sito. Se continui ad utilizzare questo sito noi assumiamo che tu ne sia felice.</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Accetta" style="background-color: #0683ff">Accetta</a><a href="https://www.iubenda.com/privacy-policy/10846330/cookie-policy" target="_blank" id="cn-more-info" class="cn-more-info cn-button" aria-label="Privacy policy" style="background-color: #0683ff">Privacy policy</a></span><span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No"></span>
+</div>
+			
+		</div>
+		<!-- / Cookie Notice plugin --><script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://novelacademy.it/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js" defer></script>-->
+
+        <script src="https://novelacademy.it/wp-content/themes/novelacademy/js/uikit.min.js" defer></script>
+        <script src="https://novelacademy.it/wp-content/themes/novelacademy/js/uikit-icons.min.js" defer></script>
+
+        <!--<script>/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */ !function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+        <script>loadCSS("https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css");</script>-->
+
+        
+    </body>
+</html>
+<!-- Parsed with iubenda experimental class in 0.0056 sec. -->
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1776873504 -->
